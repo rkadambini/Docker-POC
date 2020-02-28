@@ -32,5 +32,4 @@ services:
       - kanban-app
 
 
-volumes:
-  kanban-data:
+
