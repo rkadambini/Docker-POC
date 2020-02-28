@@ -16,8 +16,7 @@ services:
   kanban-app:
     build: ./kanban-app
     container_name: kanban-app
-    environment:
-      - DB_SERVER=kanban-postgres
+    
     ports:
       - 8080:8080
     links:
@@ -31,5 +30,7 @@ services:
     links:
       - kanban-app
 
+volumes:
+	  kanban-data:
 
 
